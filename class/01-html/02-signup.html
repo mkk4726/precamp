@@ -1,35 +1,50 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>회원가입</title>
-  <link href="./02-signup.css" rel="stylesheet">
+  <title>Sign-Up page</title>
+  <link href="02-signup.css" rel="stylesheet">
 </head>
 <body>
-  <h2>회원가입</h2>
-  <input type="text" placeholder="이메을을 입력해 주세요."><br><br>
-  <input type="text" placeholder="이름을 입력해 주세요."><br><br>
-  <input class="pw" type="password" placeholder="비밀번호를 입력해 주세요."><br><br>
-  <input class="pw" type="password" placeholder="비밀번호를 다시 입력해주세요."><br><br>
-  <select>
-    <option disabled="true" selected="true">지역을 선택하세요</option>
-    <option>서울</option>
-    <option>경기</option>
-    <option>인천</option>
-  </select>
-  <br><br>
-  <input type="radio" name="gender"><span>여성</span>
-  <input type="radio" name="gender">남성
-  <br><br>
-  <input type="checkbox"> 이용약관 개인 정보 수집 및 동의
-  <hr>
-  <button>가입하기</button>
-<!--   
-  위와 동일한 tag. input tag는 자유롭지 못해 다양한 값들을 넣기 위해
-  button tag를 사용한다. 
-  <input type="button" value="가입하기">
-  -->
+  <div id="gray_background">
+    <div id="signup_background">
+      <div>
+        <h2> 회원가입을 위해<br> 정보를 입력해주세요</h2>
+      </div>
+      <div>
+        <span class="input_menu">*이메일</span><br>
+        <input type="text"><br>
+        <hr style="border: 1px solid #0068FF;">
+      </div>
+      <div>
+        <span class="input_menu">*이름</span><br>
+        <input type="text" style="top: 441px"><br>
+        <hr>
+      </div>
+      <div>
+        <span class="input_menu">*비밀번호</span><br>
+        <input type="text"><br>
+        <hr>
+      </div>
+      <div>
+        <span class="input_menu">*비밀번호 확인</span><br>
+        <input type="text"><br>
+        <hr>
+      </div>
+      <div>
+        <input class="gender_radio" type="radio" name="gender">
+        <span class="gender">여성</span>
+        <input class="gender_radio" type="radio" name="gender">
+        <span class="gender">남성</span>
+      </div>
+      <div>
+        <button></button>
+        <span id="tos">이용약관 개인정보 수집 및 이용, 마케팅 활용 선택에 모두 동의합니다.</span>
+        <hr>
+      </div>
+      <div id="signup">
+        <span id="signup_text">가입하기</span>
+      </div>
+    </div>
+  </div>
 </body>
 </html>

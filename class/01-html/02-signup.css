@@ -1,5 +1,145 @@
-.pw {
-  border: 1px solid blue;
+* {
+  box-sizing: border-box;
+  font-family: 'Malgun Gothic', sans-serif;
+
 }
 
+input {
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: hidden;
+  background-color: white;
 
+  width: 158px;
+  height: 23.65px;
+
+
+}
+
+h2 {
+  width: 466px;
+  height: 94px;
+
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 47px;
+
+  color: #0068FF;
+}
+
+.input_menu {
+  width: 158px;
+  height: 23.65px;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height */
+
+  color: #797979;
+}
+
+hr {
+  width: 466px;
+  height: 0px;
+
+  border: 1px solid #CFCFCF;
+}
+
+.gender {
+  width: 40px;
+  height: 23.94px;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height */
+  color: #000000;
+}
+
+.gender_radio {
+  width: 20px;
+  height: 19.95px;
+
+  background: #EBEBEB;
+  border: 1px solid #D2D2D2;
+}
+
+button {
+  width: 20px;
+  height: 20px;
+
+  background: #FFFFFF;
+  border: 1px solid #C4C4C4;
+  border-radius: 3px;
+}
+
+#tos {
+  width: 500px;
+  height: 21px;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 21px;
+  /* identical to box height */
+
+
+  color: #000000;
+}
+
+#signup {
+  display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+
+  width: 470px;
+  height: 75px;
+
+
+  background: #FFFFFF;
+  border: 1px solid #0068FF;
+  border-radius: 10px;
+}
+
+#signup_text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  /* identical to box height */
+  color: #0068FF;
+}
+
+#signup_background {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+
+  width: 670px;
+  height: 960px;
+
+  background: #FFFFFF;
+  border: 1px solid #AACDFF;
+  box-shadow: 7px 7px 39px rgba(0, 104, 255, 0.25);
+  border-radius: 20px;
+}
+
+#gray_background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 1920px;
+  height: 1080px;
+
+  border: 1px solid #797979;
+  background: #FFFFFF;
+}
