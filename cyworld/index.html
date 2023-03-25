@@ -26,29 +26,48 @@
             </div>
             <div class="left__body__profile">
               <!-- 이모지 입력 window . -->
-              <i class="fa-sharp fa-regular fa-address-card"> MKK</i><br>
-              <i class="fa-solid fa-mobile"> 010-3788-4726 </i><br>
-              <i class="fa-regular fa-paper-plane"> mkk4726@naver.com</i><br>
-              <i class="fa-brands fa-square-instagram"> mkk1225_17 </i><br>
+              <div class="profile_detail">
+                <i class="fa-sharp fa-regular fa-address-card"></i> MKK<br>
+              </div>
+              <div>
+                <i class="fa-solid fa-mobile"></i> 010-3788-4726
+              </div>
+              <div>
+                <i class="fa-regular fa-paper-plane"></i> mkk4726@naver.com
+              </div>
+              <div>
+                <i class="fa-brands fa-square-instagram"></i> mkk1225_17
+              </div>  
             </div> 
             <div class="left__body__footer">
-              <span>오늘의 기분</span>
-              <select>
-                <option disabled="true" selected="true">기쁨😁</option>
-                <option>슬픔😢</option>
-                <option>웃품😂</option>
-                <option>사랑😍</option>
-              </select>
+              <div class="wrapper__feel">
+                <div class="feel__title">오늘의 기분</div>
+                <select class="feel__select">
+                  <option disabled="true" selected="true">기쁨😁</option>
+                  <option>슬픔😢</option>
+                  <option>웃품😂</option>
+                  <option>사랑😍</option>
+                </select>
+              </div>  
             </div>
               
           </div>
         </div>
         <div class="wrapper__right">
           <div class="wrapper__right__header">
-            <span>사이좋은 사람들, 싸이월드</span>
-            <span style="font-size:13px;font-weight: 500;">사생활보호설정›</span>
+            <div class="right__header__title">
+              사이좋은 사람들, 싸이월드
+            </div>
+            <div class="right__header__setting">
+              사생활보호설정
+            </div>
           </div>
-          <div class="wrapeer__right__body"></div>
+          <div class="wrapper__right__body">
+            <!-- 다른 html파일을 표시할 수 있도록 해준다. -->
+            <iframe src="./home.html">
+            </iframe>
+
+          </div>
         </div>
       </div>
     </div>
