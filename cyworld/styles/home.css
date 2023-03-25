@@ -63,3 +63,10 @@ html, body {
   width: 100%;
   height: 270px;
 }
+
+.video {
+  background-color: #C4C4C4;
+  width: 100%;
+  height: 240px;
+  margin-top: 15px;
+}
