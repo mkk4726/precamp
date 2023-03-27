@@ -124,11 +124,15 @@ html, body, .outerbox {
 
 
 .gender__select {
-  margin: 0px 100px; /*창 크기 바뀌면 글이 넘어가버림*/
   margin-top: 20px;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: center;
+  align-items: center;
+}
+
+.gender__wrapper {
+  margin: 10px;
 }
 
 .gender_radio {
