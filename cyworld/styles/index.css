@@ -1,7 +1,7 @@
 * {
   box-sizing: border-box;
   margin: 0px;
-  font-family: 'Malgun Gothic', sans-serif;
+  font-family: 'Nanum Gothic', sans-serif;
 }
 
 .background {
@@ -149,13 +149,6 @@
   font-size: 16px;
 }
 
-iframe {
-  width: 100%;
-  height: 100%;
-  border: none;
-}
-
-
 .wrapper__right__body {
   width: 510px;
   height: 445px;
@@ -163,3 +156,34 @@ iframe {
   border-radius: 15px;
   background-color: white;
 }
+
+iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.navigation {
+  width: 62px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  left: 762px;
+  top: 110px;
+}
+
+.navigation__item {
+  width: 55px;
+  height: 28px;
+  background-color: #298eb5;
+  border: 1px solid black;
+  color: white;
+  font-size: 12px;
+  border-radius: 0px 10px 10px 0px;
+  text-align: center;
+  line-height: 25px;
+  cursor: pointer;
+}
+
