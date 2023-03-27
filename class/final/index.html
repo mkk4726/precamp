@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <title>Sign-Up Page</title>
+  <link href="./final.css" rel="stylesheet">
+  <script src="./final.js"></script>
+  <script src="https://kit.fontawesome.com/278c836bd0.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="outerbox">
+    <div class="wrapper">
+      <div class="header"> 
+        코드캠프 회원가입
+      </div>
+      <div class="input__basicInfo">
+        <input id="email" placeholder="이메일을 입력해 주세요.">
+        <span id="email_alert" class="alert">이메일 형식이 올바르지 않습니다.</span>
+        <input id="name" placeholder="이름을 입력해 주세요.">
+        <span id="name_alert" class="alert">이름이 올바르지 않습니다.</span>
+        <input id="password1" placeholder="비밀번호를 입력해 주세요.">
+        <span id="password1_alert" class="alert">비밀번호를 입력해주세요.</span>
+        <input id="password2" placeholder="비밀번호를 다시 입력해 주세요.">
+        <span id="password2_alert" class="alert">비밀번호를 다시 확인해주세요.</span>
+      </div>
+      <div class="verification">
+        <div class="input__phoneNumber">
+          <input id="firstNumber" maxlength="3" oninput="phoneNumber.firstToSecond()">-
+          <input id="secondNumber" maxlength="4" oninput="phoneNumber.secondToThird()">-
+          <input id="thirdNumber" maxlength="4" oninput="phoneNumber.thirdToSending()">
+        </div>
+        <div class="sending">
+          <span id="sendingNumber" class="number">000000</span>
+          <button id="sendingButton" class="button" onclick="sending()" disabled>인증번호 전송</button>
+        </div>
+        <div class="timer">
+          <span id="time" class="time">3:00</span>
+          <button id="timeButton" class="button" onclick="complete()" disabled>인증확인</button>
+        </div>
+      </div>  
+      <span id="phone_alert" class="alert">번호인증을 완료하세요.</span>  
+      <select id="region" class="region__select">
+        <option disabled="true" selected="true">지역을 선택하세요.</option>
+        <option>서울</option>
+        <option>인천</option>
+        <option>경기</option>
+      </select>
+      <span id="region_alert" class="alert">지역을 선택하세요</span>
+      <div class="gender__select">
+        <input class="gender_radio" type="radio" name="gender" value="여성">
+        <span>여성</span>
+        <input class="gender_radio" type="radio" name="gender" value="남성">
+        <span>남성</span>
+      </div>
+      <span id="gender_alert" class="alert">성별을 선택해주세요.</span>
+      <div class="divideLine"></div>
+      <div class="signUp">
+        <button id="signupButton" class="signUp__button"  onclick="checkSignup()">가입하기</button>
+      </div>
+    </div>
+  </div>  
+</body>
+</html>

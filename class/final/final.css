@@ -1,0 +1,173 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  font-family: 'Nanum Gothic', sans-serif;
+}
+
+html, body, .outerbox {
+  width: 100%;
+  height: 100%;
+}
+
+.outerbox {
+  padding: 30px;
+}
+
+.wrapper {
+  margin: 0 auto;
+  padding: 30px;
+  max-width: 600px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  background: #FFFFFF;
+  border: 1px solid #AACDFF;
+  box-shadow: 7px 7px 39px rgba(0, 104, 255, 0.25);
+  border-radius: 20px;
+}
+
+.header {
+  margin-bottom: 20px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 47px;
+
+  color: #0068FF; 
+}
+
+.input__basicInfo {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.input__basicInfo input {
+  margin-top: 10px;
+  height: 35px;
+  background: #FFFFFF;
+  border-radius: 7px;
+  border: 1px solid #D2D2D2;
+}
+
+#email {
+  border: 1px solid #0068FF;
+}
+
+.verification {
+  width: 100%;
+}
+
+.input__phoneNumber {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  height: 30px;
+  margin: 10px 0px;
+
+}
+
+#firstNumber, #secondNumber, #thirdNumber {
+  width: 25%;
+  background: #FFFFFF;
+  border: 1px solid #D2D2D2;
+  border-radius: 7px;
+}
+
+.sending {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+}
+
+.button {
+  margin-left: 10px;
+  width: 100px;
+  height: 25px;
+  background: #FFFFFF;
+  border: 1px solid #D2D2D2;
+  color: #D2D2D2;
+  border-radius: 7px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 24px;
+}
+
+.timer {
+  margin: 10px 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+}
+
+.sending .number, .timer .time {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  /* identical to box height */
+  text-align: right;
+  color: #0068FF;
+}
+
+
+.region__select {
+  margin-top: 10px;
+  width: 100%;
+  height: 40px;
+  background: #FFFFFF;
+  border: 1px solid #D2D2D2;
+  border-radius: 7px;
+}
+
+
+.gender__select {
+  margin: 0px 100px; /*창 크기 바뀌면 글이 넘어가버림*/
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.gender_radio {
+  background: #EBEBEB;
+  border: 1px solid #D2D2D2;
+}
+
+.divideLine {
+  border: 1px solid #E6E6E6;
+  margin-top: 30px;
+}
+
+.signUp{
+  width: 100%;
+  height: 60px;
+  margin: 20px 0px;
+}
+
+.signUp__button {
+  width: 100%;
+  height: 100%;
+  background: #FFFFFF;
+  border: 1px solid #0068FF;
+  border-radius: 10px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 27px;
+  /* identical to box height */
+
+  text-align: center;
+
+  color: #0068FF;
+
+}
+
+
+.alert {
+  text-align: center;
+  font-size: 6px;
+  color: black;
+}
